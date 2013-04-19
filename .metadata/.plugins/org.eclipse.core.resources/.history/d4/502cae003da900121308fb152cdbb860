@@ -1,0 +1,5 @@
+package com.agame.framework;
+
+public interface Graphics {
+
+}
