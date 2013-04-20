@@ -1,0 +1,13 @@
+package com.agame.framework.impl;
+
+import com.agame.framework.Audio;
+
+import android.content.res.AssetManager;
+import android.media.SoundPool;
+
+public class AndroidAudio implements Audio {
+
+	AssetManager assets;
+	SoundPool soundPool;
+	
+}

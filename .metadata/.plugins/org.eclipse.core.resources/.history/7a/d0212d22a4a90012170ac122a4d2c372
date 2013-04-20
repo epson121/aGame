@@ -1,0 +1,5 @@
+package com.agame.framework.impl;
+
+public class AndroidSound {
+
+}

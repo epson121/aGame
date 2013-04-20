@@ -1,0 +1,65 @@
+package com.agame.framework.impl;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.PowerManager.WakeLock;
+import android.view.Window;
+
+import com.agame.framework.Audio;
+import com.agame.framework.FileIO;
+import com.agame.framework.Game;
+import com.agame.framework.Graphics;
+import com.agame.framework.Input;
+import com.agame.framework.Screen;
+
+public class AndroidGame extends Activity implements Game {
+	
+	AndroidFastRenderView renderView;
+    Graphics graphics;
+    Audio audio;
+    Input input;
+    FileIO fileIO;
+    Screen screen;
+    WakeLock wakeLock;
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    	super.onCreate(savedInstanceState);
+    	requestWindowFeature(Window.FEATURE_NO_TITLE);
+    }
+	
+	@Override
+	public Audio getAudio() {
+		return null;
+	}
+
+	@Override
+	public Input getInput() {
+		return null;
+	}
+
+	@Override
+	public FileIO getFileIO() {
+		return null;
+	}
+
+	@Override
+	public Graphics getGraphics() {
+		return null;
+	}
+
+	@Override
+	public void setScreen(Screen screen) {
+	}
+
+	@Override
+	public Screen getCurrentScreen() {
+		return null;
+	}
+
+	@Override
+	public Screen getInitScreen() {
+		return null;
+	}
+
+}

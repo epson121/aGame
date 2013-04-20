@@ -1,0 +1,41 @@
+package com.agame.framework.impl;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import android.content.SharedPreferences;
+
+import com.agame.framework.FileIO;
+
+public class AndroidFileIO implements FileIO {
+	
+	Context context;
+    AssetManager assets;
+    String externalStoragePath;
+	
+	@Override
+	public InputStream readFile(String file) throws IOException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public OutputStream writeFile(String file) throws IOException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public InputStream readAsset(String file) throws IOException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SharedPreferences getSharedPref() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

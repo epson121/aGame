@@ -1,0 +1,35 @@
+package com.agame.framework.impl;
+
+import com.agame.framework.Audio;
+import com.agame.framework.Music;
+import com.agame.framework.Sound;
+
+import android.app.Activity;
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
+import android.media.AudioManager;
+import android.media.SoundPool;
+
+public class AndroidAudio implements Audio {
+
+	AssetManager assets;
+	SoundPool soundPool;
+	
+	public AndroidAudio(Activity activity) {
+		activity.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+		this.assets = activity.getAssets();
+		this.soundPool = new SoundPool(20, AudioManager.STREAM_MUSIC, 0);
+	}
+	
+	@Override
+	public Music createMusic(String filename) {
+		AssetFileDescriptor assetDescriptor = asset.openFd(file);
+		return null;
+	}
+	@Override
+	public Sound createSound(String file) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

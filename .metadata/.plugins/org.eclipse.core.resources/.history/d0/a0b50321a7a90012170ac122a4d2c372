@@ -1,0 +1,7 @@
+package com.agame.framework.impl;
+
+import android.view.SurfaceView;
+
+public class AndroidFastRenderView extends SurfaceView implements Runnable{
+
+}

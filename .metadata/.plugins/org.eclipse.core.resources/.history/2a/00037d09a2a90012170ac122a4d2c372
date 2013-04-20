@@ -1,0 +1,7 @@
+package com.agame.framework.impl;
+
+import com.agame.framework.FileIO;
+
+public class AndroidFileIO implements FileIO {
+
+}

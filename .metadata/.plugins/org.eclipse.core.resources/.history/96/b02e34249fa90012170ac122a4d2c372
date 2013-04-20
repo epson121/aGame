@@ -1,0 +1,78 @@
+package com.agame.framework.impl;
+
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+
+import com.agame.framework.Graphics;
+import com.agame.framework.Image;
+
+public class AndroidGraphics implements Graphics {
+	
+	AssetManager assets;
+    Bitmap frameBuffer;
+    Canvas canvas;
+    Paint paint;
+    Rect srcRect = new Rect();
+    Rect dstRect = new Rect();
+    
+	public AndroidGraphics(AssetManager assets, Bitmap frameBuffer) {
+		this.assets = assets;
+		this.frameBuffer = frameBuffer;
+		this.canvas = new Canvas(frameBuffer);
+	}
+
+	@Override
+	public Image newImage(String fileName, ImageFormat format) {
+		return null;
+	}
+
+	@Override
+	public void clearScreen(int color) {
+		
+	}
+
+	@Override
+	public void drawLine(int x, int y, int x2, int y2, int color) {
+		
+	}
+
+	@Override
+	public void drawRect(int x, int y, int width, int height, int color) {
+		
+	}
+
+	@Override
+	public void drawImage(Image image, int x, int y, int srcX, int srcY,
+			int srcWidth, int srcHeight) {
+		
+	}
+
+	@Override
+	public void drawImage(Image Image, int x, int y) {
+		
+	}
+
+	@Override
+	public void drawString(String text, int x, int y, Paint paint) {
+		
+	}
+
+	@Override
+	public int getWidth() {
+		return 0;
+	}
+
+	@Override
+	public int getHeight() {
+		return 0;
+	}
+
+	@Override
+	public void drawARGB(int i, int j, int k, int l) {
+		
+	}
+
+}

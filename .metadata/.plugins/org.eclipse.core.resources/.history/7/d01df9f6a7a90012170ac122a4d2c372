@@ -1,0 +1,24 @@
+package com.agame.framework.impl;
+
+import java.util.List;
+
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+
+public interface TouchHandler implements OnTouchListener {
+    public boolean isTouchDown(int pointer);
+   
+    public int getTouchX(int pointer);
+   
+    public int getTouchY(int pointer);
+   
+    public List<TouchEvent> getTouchEvents();
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
